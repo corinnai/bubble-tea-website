@@ -1,0 +1,338 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    /* box-sizing: border-box; */
+}
+body{
+    box-sizing: border-box;
+    background-image: linear-gradient(rgb(247,219,192),white);
+    
+}
+:root {
+    --primary-color: rgb(204, 214, 235); 
+    --secondary-color: rgba(248, 206, 181, 0.7); 
+    --text-color: #333333; 
+   
+}
+
+header {
+    background-color: var( --primary-color);
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    
+}
+.logo{
+    width: 60px; 
+    height: auto;
+    
+ }
+ .navbar:hover .logo{
+    animation: move 5s ease-in-out infinite;
+ }
+ @keyframes move {
+    from{
+        transform: translate(-1vw);
+    }
+    to{
+        transform: translate(100vw);
+    }
+ }
+    
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+    
+}
+ .nav-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px; 
+    list-style-type: none;
+    
+
+ }
+ .nav-links a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+.nav-links li a:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.nav-icons {
+    display: flex;
+    gap: 20px;
+   
+}
+.nav-icons a {
+    color: white;
+    padding-right: 20px;
+}
+
+.intro {
+    
+    text-align: center;
+    padding: 100px 10px; 
+    height: 100%;
+  } 
+
+.welcome{
+    display: block;
+    color: #fff;
+    font-size: 6rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    overflow: hidden; 
+    white-space: nowrap; 
+    margin: 0 auto; 
+    letter-spacing: .15em; 
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+
+}
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: white; }
+  }
+
+.bliss{
+    display: inline-block;
+    color: var( --text-color);
+    background-color:  var(--secondary-color);
+    font-family: "Great Vibes", cursive; 
+    font-size: 70px;
+    margin-top: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    transform: skewY(-5deg);
+    
+}
+/* adding style to the second section */
+.container1{
+    display:block;
+}
+.container2 {
+    display: inline-block;
+    background-color: var( --primary-color);
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px  white;
+
+}
+.container2:hover{
+    background-color: var( --secondary-color);
+    
+}
+.container{
+    text-align: center; 
+    padding: 20px 10px; 
+    height: 100px;
+    background-color: antiquewhite;
+    letter-spacing: 10px;
+    
+}
+.container a{
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 50px;
+    font-weight: bold;
+
+    
+}
+
+.container-list a{
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+
+}
+.container-list{
+    display: flex;
+    padding: 20px;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.container-list .class1, .class2, .class3, .class4{
+    background-color: var( --primary-color);
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px  white;
+    margin: 20px 20px;
+   
+}
+
+.class1:hover{
+    background-color: antiquewhite;
+   
+}
+.class2:hover{
+    background-color: antiquewhite;
+   
+}
+.class3:hover{
+    background-color: antiquewhite;
+   
+}
+.class4:hover{
+    background-color: antiquewhite;
+   
+}
+
+/* section types of boba and drinks */
+.milk a, .fruit a, .specials a, .bobas-types a{
+    display: inline-block; 
+    font-size: 1.5rem; 
+    margin-bottom: 1rem; 
+    color: white; 
+    text-decoration: none; 
+    font-weight: bold; 
+    background-color: var( --secondary-color);
+    padding: 10px 50px; 
+    margin-top: 1rem;
+    border-radius: 10px;
+    box-shadow:  10px 10px 8px antiquewhite, 10px 10px 8px var( --primary-color), 15px 15px 8px var( --secondary-color) ;
+    
+}
+.milk a:hover {
+    background-color: antiquewhite;
+} 
+.fruit a:hover {
+    background-color: antiquewhite;
+}
+.specials a:hover {
+    background-color: rgb(250, 235, 215);
+} 
+.bobas-types a:hover {
+    background-color: antiquewhite;
+}
+
+.milk-types ul, .fruit-types ul, .specials-types ul {
+    list-style: none; 
+    text-align: center; 
+    padding: 0; 
+    display: flex;
+    justify-content: space-around;
+}
+.bobas ul{
+    list-style: none; 
+    text-align: center; 
+    padding: 0;
+    background-color: white !important;
+}
+
+.milk-types li, .fruit-types li, .specials-types li, .bobas li{
+    display: inline-block; 
+    margin: 0 1rem; 
+    border-radius: 5px; 
+}
+
+
+.milk-types li a, .fruit-types li a, .specials-types li a, .bobas li a {
+    text-decoration: none; 
+    color: var( --text-color);
+    font-weight: bold; 
+    font-size: 30px;
+    font-family:"Great Vibes", cursive; 
+    letter-spacing: 2px;
+    box-shadow:  10px 10px 8px antiquewhite;
+    
+    
+}
+
+
+.milk-types img, .fruit-types img, .specials-types img  {
+    width: 400px; 
+    height: 400px; 
+    display: block; 
+    margin: 10px auto; 
+    
+
+}
+
+.bobas img{
+    width: auto; 
+    height: auto; 
+    display: block; 
+    margin: 10px auto; 
+}
+
+
+/* section social media */
+.media{
+    background-color:rgba(248, 206, 181, 0.7); 
+    margin-bottom: 0;
+}
+ .social-media{
+    
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 20px 20px;
+ }
+
+.media-icons{
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+.media-icons a{
+    color: white;
+    font-size: 30px;
+    padding: 20px 20px;
+}
+
+/* footer */
+
+footer{
+    display: flex;
+    height: 70px;
+    background-color: var( --primary-color);
+    color: white;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+ }
+
+
+@media (max-width: 768px) {
+    .nav-links, .nav-icons {
+        display: none; 
+    }
+
+    .logo {
+        margin: auto; 
+    }
+    .welcome, .bliss{
+        font-size: 3rem;
+    }
+    .container-list {
+        display: grid;
+        justify-content: center;
+    }
+    .milk-types ul, .fruit-types ul, .specials-types ul, .bobas ul{
+        display: grid;
+    }
+    
+}  
+
+
